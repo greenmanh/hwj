@@ -44,11 +44,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
         return adapter;
     }
 
-    /*//注册拦截器
+    //注册拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //WebMvcConfigurer.super.addInterceptors(registry);
         registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns("/index.html","/","/user/login");
-    }*/
+    }
 }
