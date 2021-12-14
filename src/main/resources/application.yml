@@ -5,6 +5,8 @@ server:
   error:
     include-message: always #获取异常信息
     include-exception: true #启用自定义异常面获取异常对象
+  tomcat:
+    uri-encoding: UTF-8
 spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/spring?serverTimezone=UTC&characterEncoding=UTF-8&useSSL=false
